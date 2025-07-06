@@ -1,0 +1,28 @@
+package com.test.test.domain;
+
+import java.time.LocalDate;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+@Entity
+public class Eat {
+	
+	@Id
+	@GeneratedValue (strategy = GenerationType.AUTO)
+	private long eatId;
+	private String category;
+	private int amount, calories, carbohydrates, protein, fat;
+	
+	private LocalDate eatDate;
+	
+
+}

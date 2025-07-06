@@ -1,0 +1,5 @@
+package com.test.test.domain;
+
+public class Eat {
+
+}
